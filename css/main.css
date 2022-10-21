@@ -1,0 +1,106 @@
+:root {
+  --main-color: #47cfac;
+  --main-text-color: #000;
+  --main-icon-color: #ddd;
+  --secundary-text-color: #fff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+body {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+/* ---------------------------------------------------HEADER------------------------------------------ */
+header {
+  width: 100%;
+  height: 140px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.header-icons-container {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  background-color: var(--main-color);
+}
+.icons {
+  width: 300px;
+  height: auto;
+  display: flex;
+  justify-items: flex-end;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: end;
+  margin-right: 50px;
+}
+.icons i {
+  font-size: 25px;
+  color: var(--main-icon-color);
+}
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90px;
+}
+.nav-logo-container {
+  margin-left: 50px;
+}
+.nav-logo-container img {
+  width: 220px;
+  margin-top: 10px;
+}
+.profile-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+.profile-link a {
+  border-bottom: 1px solid var(--main-text-color);
+}
+/* ---------------------------------------------------MAIN------------------------------------------ */
+.main-home {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  height: 100%;
+  background-image: url(https://uce6ca583099ae00fbe70a05da96.previews.dropboxusercontent.com/p/thumb/ABvqrL-t7qJYch7ks3Nhbyp69gTz0K2LIN6vdfSmQ2-FhvvpjSegMZIz5c0gOCu7ClOv9zjic_MuKXESuimkWo5I9fWWncGgbaBJTY19hzh80XVv4SpeUlPHorgT8Q14LWZGp5WRmF7Q2hRyCjaC8jsiAHTLW6ilvmhqcG3i6SeeGJ4pfHoc5RrpAwhuc4RpxpXtC1VWHZIXd8dsJ_BVS6RVxRIT4F1KFUGqvzVBhrcvT2inU70ALGvXSIk4f1X0lcnazAEGjDIIhpB5BDQdX2LbjxmM7bT3bS1bSuey27TOPJiUGnYslU2wteYMJ6CPNQ83F9fD07ga4Rvm1qpSWPoXHx41vftZHUoVJG45Jojn_6dDMLa7UbdorjpGXmEjTdQ/p.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-home-container {
+  display: grid;
+  grid-column: 2;
+  justify-items: center;
+  height: 350px;
+  margin-top: 80px;
+}
+.main-home-text {
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  color: var(--secundary-text-color);
+  font-size: 2rem;
+  letter-spacing: 10px;
+  font-weight: bold;
+}
+.main-home-button {
+  margin: 100px auto 0;
+  width: 110px;
+  height: 50px;
+  line-height: 50px;
+  background-color: var(--main-color);
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.05rem;
+}
